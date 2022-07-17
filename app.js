@@ -18,3 +18,16 @@ function playerSelection() {
     let input = prompt('Please type one of rock, paper or scissors');
     return input.toLowerCase();
 }
+
+function playRound () {
+    let user = playerSelection();
+    let computer = computerChoice();
+ //  console.log(user, computer)
+    if (user == computer) {
+        console.log(` You both played ${user}, its a tie!`)
+    } else if (user == 'rock' && computer == 'scissors' || user == 'paper' && computer == 'rock' || user == 'scissors' && computer == 'rock'){
+        console.log(`${user} beats ${computer} you win!`)
+    } else {
+        console.log(`${computer} beats ${user}, You lose!`)
+    }
+}
