@@ -14,6 +14,7 @@ function computerChoice() {
     return choice[Math.floor(Math.random() * choice.length)];
 }
 
-function playRound () {
-
+function playerSelection() {
+    let input = prompt('Please type one of rock, paper or scissors');
+    return input.toLowerCase();
 }
