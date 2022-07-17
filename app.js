@@ -11,5 +11,9 @@ make a loop to play 5 rounds
 let choice = ['rock', 'paper', 'scissors']
 
 function computerChoice() {
-    return choice[Math.floor(Math.random() * choices.length)];
+    return choice[Math.floor(Math.random() * choice.length)];
+}
+
+function playRound () {
+
 }
